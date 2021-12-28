@@ -5,9 +5,6 @@ import portfolio3 from '../img/portfolio3.webp'
 import portfolio4 from '../img/portfolio4.webp'
 import portfolio5 from '../img/portfolio5.webp'
 import portfolio6 from '../img/portfolio6.webp'
-import portfolio7 from '../img/portfolio7.webp'
-import portfolio8 from '../img/portfolio8.webp'
-import portfolio9 from '../img/portfolio9.webp'
 
 import logo from '../img/logo.png'
 import historia from '../img/historia.webp'
@@ -41,9 +38,6 @@ const VariablesProvider = (props) => {
         portfolioImg4: portfolio4,
         portfolioImg5: portfolio5,
         portfolioImg6: portfolio6,
-        portfolioImg7: portfolio7,
-        portfolioImg8: portfolio8,
-        portfolioImg9: portfolio9,
         elementoNavbar1: 'Shows',
         elementoNavbar2: 'Historia',
         elementoNavbar3: 'Astral',
