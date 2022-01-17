@@ -1,0 +1,18 @@
+.container-tuentrada{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+}
+
+.fecha-tuen{
+    font-size: 35px;
+    color: #B10439;
+    font-weight: 700;
+}
+
+.container-tuentrada__col1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
