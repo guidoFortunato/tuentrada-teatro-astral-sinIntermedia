@@ -25,7 +25,7 @@ const ListaEventos = ({id, title, image, date, time, buy}) => {
                                        
                                             
                                         
-                                            <span className='fw-bold'>Sábado</span>
+                                            <span className='fw-bold'>SAB</span>
                                        
                                       
                                         
@@ -35,7 +35,7 @@ const ListaEventos = ({id, title, image, date, time, buy}) => {
                                         
                                         
                                             
-                                            <span className='fw-bold'>Enero 2022</span>
+                                            <span className='fw-bold'>ENE 2022</span>
                                         
 
                                     </div>
