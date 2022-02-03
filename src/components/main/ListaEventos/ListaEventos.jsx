@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './listaEventos.css'
 
 const ListaEventos = ({id, title, image, date, time, buy}) => {
 
+    console.log(id)
 
     
     return (
@@ -35,7 +37,7 @@ const ListaEventos = ({id, title, image, date, time, buy}) => {
                                         
                                         
                                             
-                                            <span className='fw-bold'>ENE 2022</span>
+                                            <span className='fw-bold'>FEB 2022</span>
                                         
 
                                     </div>
@@ -45,7 +47,7 @@ const ListaEventos = ({id, title, image, date, time, buy}) => {
                                     <div className="container-tuentrada__col2">
 
                                         
-                                        <a
+                                        {/* <a
                                             className="btn btn-primary btn-color mt-4"
                                             rel="noreferrer"
                                             target='_blank'
@@ -53,7 +55,14 @@ const ListaEventos = ({id, title, image, date, time, buy}) => {
                                             
                                             >
                                             Comprar
-                                        </a>
+                                        </a> */}
+                                        <Link
+                                            className="btn btn-primary btn-color mt-4"
+                                            to={`/${id}`}
+                                            
+                                            >
+                                            Comprar
+                                        </Link>
 
                                     </div>
                                 </div>

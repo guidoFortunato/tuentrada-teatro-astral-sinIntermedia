@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { withRouter } from 'react-router'
 import { Link, useParams } from "react-router-dom"
 import { Get } from '../services/privateApiService'
@@ -24,12 +24,13 @@ const DetalleEvento = (props) => {
     }
     
 
-    React.useEffect(()=>{
+    useEffect(()=>{
         
         
 
         const getData = async ()=>{
-            const url = process.env.REACT_APP_API_OBRAS 
+            // const url = process.env.REACT_APP_API_OBRAS 
+            const url = 'https://api.tuentrada.com/api/venue?venue=astral' 
 
             try {
 
@@ -71,7 +72,7 @@ const DetalleEvento = (props) => {
 
         
             <div className="container mt-2 ">
-                <h1 className='titulo-evento-detalle'>Título del evento</h1> 
+                <h1 className='titulo-evento-detalle'>Id del evento: {id}</h1> 
                 <hr className='hr-evento-detalle'/>
                 <div className="row">
                     <div className="col-12 col-lg-6 mb-5 mb-lg-0">
@@ -152,7 +153,7 @@ const DetalleEvento = (props) => {
                         </p>
                         <div className="text-center pb-1">
                             <a href={variables.linkVenueFb} target='_blank' rel="noreferrer" className='me-2'><i className="bi bi-facebook m"></i></a>
-                            <a href={variables.linkVenueTw} target='_blank' rel="noreferrer" className='me-2'><i className="bi bi-twitter"></i></a>
+                            {/* <a href={variables.linkVenueTw} target='_blank' rel="noreferrer" className='me-2'><i className="bi bi-twitter"></i></a> */}
                             <a href={variables.linkVenueIg} target='_blank' rel="noreferrer" className='me-2'><i className="bi bi-instagram"></i></a>
                         </div>
                     
