@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './listaEventos.css'
 
 const ListaEventos = ({id, title, image, date, time, buy}) => {
